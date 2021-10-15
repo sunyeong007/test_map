@@ -12,14 +12,15 @@
 <script>
 var mapContainer = document.getElementById('map'), // 지도를 표시할 div  
     mapOption = { 
-        center: new kakao.maps.LatLng(37.58243228921183, 126.98364578216183), // 지도의 중심좌표
+        center: new kakao.maps.LatLng(37.5825, 126.9836), // 지도의 중심좌표
         level: 3 // 지도의 확대 레벨
     };
 
 var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
  
 // 마커를 표시할 위치와 내용을 가지고 있는 객체 배열입니다 
-var positions = [{
+var positions = [
+{
 content: '<div>북촌문화요일</div>',
 latlng: new kakao.maps.LatLng(37.5790313,126.9864082)
 },
@@ -1284,7 +1285,7 @@ content: '<div>토다기</div>',
 latlng: new kakao.maps.LatLng(37.5831072,126.9871002)
 },
 {
-content: '<div>Baek Inje's House</div>',
+content: "<div>Baek Inje's House</div>",
 latlng: new kakao.maps.LatLng(37.580642,126.9840665)
 },
 {
@@ -1680,7 +1681,7 @@ content: '<div>응정헌</div>',
 latlng: new kakao.maps.LatLng(37.640408,126.939675)
 },
 {
-content: '<div>전통발효공방 '빚담'</div>',
+content: "<div>전통발효공방 '빚담'</div>",
 latlng: new kakao.maps.LatLng(37.582485,126.985498)
 },
 {
@@ -1732,7 +1733,7 @@ content: '<div>게스트하우스 바리</div>',
 latlng: new kakao.maps.LatLng(37.577229,126.970479)
 },
 {
-content: '<div>전통발효공방 '빚담'</div>',
+content: "<div>전통발효공방 '빚담'</div>",
 latlng: new kakao.maps.LatLng(37.5822725,126.9854868)
 },
 {
@@ -1812,7 +1813,7 @@ content: '<div>HongByeokheon Dakjongi Dolls Workshop</div>',
 latlng: new kakao.maps.LatLng(37.5832449,126.9892891)
 },
 {
-content: '<div>Bukchon Chogo Workshop 'GODRATDOL'</div>',
+content: "<div>Bukchon Chogo Workshop 'GODRATDOL'</div>",
 latlng: new kakao.maps.LatLng(37.5818673,126.9835212)
 },
 {
@@ -1868,7 +1869,7 @@ content: '<div>唯真的家 (EUGENE’S HOUSE)</div>',
 latlng: new kakao.maps.LatLng(37.590347,127.00022)
 },
 {
-content: '<div>Hanok Guesthouse 'Urijip Our Home'</div>',
+content: "<div>Hanok Guesthouse 'Urijip Our Home'</div>",
 latlng: new kakao.maps.LatLng(37.5790024,126.9860825)
 },
 {
@@ -1978,7 +1979,8 @@ latlng: new kakao.maps.LatLng(37.5790313,126.9864082)
 {
 content: '<div>草藁工坊“?石”</div>',
 latlng: new kakao.maps.LatLng(37.582114,126.983489)
-}];
+}
+];
 
 for (var i = 0; i < positions.length; i ++) {
     // 마커를 생성합니다
